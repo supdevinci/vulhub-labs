@@ -53,7 +53,8 @@ This script provides an interactive way to select vulnerable software and CVEs t
 1. Run the script in the terminal:
 
    ```bash
-   ./vulhub_script.sh
+   chmod +x vulnerability_labs.sh
+   ./vulnerability_labs.sh
    ```
 
 2. You will be presented with a menu to select the software you want to test.
