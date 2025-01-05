@@ -8,9 +8,12 @@ Vulhub is an open-source collection of pre-built vulnerable Docker environments.
 
 ## Compatibility
 
-Vulhub is compatible with Linux systems and Windows via WSL2. Follow the instructions below to install WSL2 on Windows:
+Vulhub is compatible with Linux systems and Windows via WSL2. 
 
-### Install WSL2 on Windows:
+### For Windows Users:
+If you are using Windows, you will need to install WSL2 to enable a Linux environment. Follow the instructions below:
+
+#### Install WSL2 on Windows:
 
 1. Enable the WSL feature:
    ```powershell
@@ -31,6 +34,9 @@ Vulhub is compatible with Linux systems and Windows via WSL2. Follow the instruc
 5. Install a Linux distribution from the Microsoft Store (e.g., Ubuntu).
 
 For detailed instructions, visit the [WSL2 Documentation](https://learn.microsoft.com/en-us/windows/wsl/install).
+
+### For Linux Users:
+If you are already using Linux, you can skip the WSL2 installation and proceed directly to the installation steps for Docker.
 
 ## Installation
 
