@@ -39,7 +39,7 @@ The installation steps of Docker and Docker Compose for other operating systems 
 
 ```bash
 # Download project
-wget https://github.com/vulhub/vulhub/archive/master.zip -O vulhub-master.zip
+git clone https://github.com/supdevinci/vulhub-labs.git
 unzip vulhub-master.zip
 cd vulhub-master
 
