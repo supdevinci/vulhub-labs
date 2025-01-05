@@ -17,53 +17,83 @@
   </p>
 </p>
 
-Vulhub is an open-source collection of pre-built vulnerable docker environments. No pre-existing knowledge of docker is required, just execute two simple commands and you have a vulnerable environment.
+# Vulhub Playground
+
+Vulhub is an open-source collection of pre-built vulnerable Docker environments. No pre-existing knowledge of Docker is required; just execute two simple commands, and you have a vulnerable environment.
 
 ## Installation
 
-Install Docker on Ubuntu 22.04:
+### Install Docker on Ubuntu 22.04:
 
 ```bash
-# Install the latest version docker
+# Install the latest version of Docker
 curl -s https://get.docker.com/ | sh
 
-# Run docker service
-systemctl start docker
+# Run Docker service
+sudo systemctl start docker
 ```
 
-Note that as of April 2022, `docker compose` is merged into Docker as a subcommand as [Docker Compose V2](https://www.docker.com/blog/announcing-compose-v2-general-availability/), the Python version of docker-compose will be deprecated after June 2023. So Vulhub will no longer require the installation of additional `docker-compose`, and all documentation will be modified to use the `docker compose` instead.
+Note: As of April 2022, Docker Compose is merged into Docker as a subcommand (Docker Compose V2). The Python version of `docker-compose` will be deprecated after June 2023. Vulhub will no longer require the installation of additional `docker-compose`, and all documentation will be updated to use the `docker compose` subcommand.
 
-The installation steps of Docker and Docker Compose for other operating systems might be slightly different, please refer to the [docker documentation](https://docs.docker.com/) for details.
+The installation steps of Docker and Docker Compose for other operating systems might be slightly different. Please refer to the [Docker documentation](https://docs.docker.com/) for details.
+
+### Clone the Vulhub Repository
+
+To get started, clone the Vulhub Labs repository:
+
+```bash
+git clone https://github.com/supdevinci/vulhub-labs.git
+cd vulhub-labs
+```
 
 ## Usage
 
-```bash
-# Download project
-git clone https://github.com/supdevinci/vulhub-labs.git
-unzip vulhub-master.zip
-cd vulhub-master
+This script provides an interactive way to select vulnerable software and CVEs to explore. Follow these steps:
 
-# Enter the directory of vulnerability/environment
-cd flask/ssti
+1. Run the script in the terminal:
 
-# Compile environment
-docker compose build
+   ```bash
+   ./vulhub_script.sh
+   ```
 
-# Run environment
-docker compose up -d
-```
+2. You will be presented with a menu to select the software you want to test.
 
-There is a **README** document in each environment directory, please read this file for vulnerability/environment testing and usage.
+3. Once you select the software, you can choose the specific vulnerability (CVE) from the available options.
 
-After the test, delete the environment with the following command.
+4. The script will launch the corresponding Docker environment and display the ports being used for the environment.
 
-```
-docker compose down -v
-```
+5. If there are port conflicts or any issues, the script will provide guidance on resolving them.
 
-It is recommended to use a VPS of at least 1GB memory to build a vulnerability environment. The `your-ip` mentioned in the documentation refers to the IP address of your VPS. If you are using a virtual machine, it refers to your virtual machine IP, not the IP inside the docker container.
+### Example Workflow
 
-**All environments in this project are for testing purposes only and should not be used as a production environment!**
+- Select the software from the main menu.
+- Choose the specific CVE or subdirectory.
+- The script will launch the environment and provide a list of URLs and ports for accessing the services.
+
+### Important Notes
+
+- Ensure that you have the required permissions to run Docker commands on your system.
+- Use the environments responsibly and only for educational or testing purposes.
+
+## Troubleshooting
+
+If you encounter issues such as port conflicts:
+
+- The script will detect the port conflict and provide the container name causing the issue.
+- You can stop the conflicting container using:
+
+  ```bash
+  docker stop <container_name>
+  ```
+
+## Contributing
+
+If you want to contribute to the Vulhub Playground, fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 
 ## Notice
 
