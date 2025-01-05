@@ -1,4 +1,3 @@
-<!-- markdownlint-disable first-line-heading -->
 <p align="center">
   <img src=".github/assets/banner.png" alt="Vulhub" height="auto" />
 </p>
@@ -6,6 +5,32 @@
 # Vulhub Playground
 
 Vulhub is an open-source collection of pre-built vulnerable Docker environments. No pre-existing knowledge of Docker is required; just execute two simple commands, and you have a vulnerable environment.
+
+## Compatibility
+
+Vulhub is compatible with Linux systems and Windows via WSL2. Follow the instructions below to install WSL2 on Windows:
+
+### Install WSL2 on Windows:
+
+1. Enable the WSL feature:
+   ```powershell
+   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+   ```
+
+2. Restart your computer.
+
+3. Install the Linux kernel update package:
+   Download and install the package from [here](https://aka.ms/wsl2kernel).
+
+4. Set WSL2 as the default version:
+   ```powershell
+   wsl --set-default-version 2
+   ```
+
+5. Install a Linux distribution from the Microsoft Store (e.g., Ubuntu).
+
+For detailed instructions, visit the [WSL2 Documentation](https://learn.microsoft.com/en-us/windows/wsl/install).
 
 ## Installation
 
@@ -77,12 +102,10 @@ If you encounter issues such as port conflicts:
 
 If you want to contribute to the Vulhub Playground, fork the repository and submit a pull request.
 
-
 ## Notice
 
 1. To prevent permission errors, please ensure that the docker container has permission to access all files in the current directory.
 2. Vulhub does not support running on machines with non-x86 architecture such as ARM for now.
-
 
 ## License
 
