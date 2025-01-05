@@ -91,10 +91,6 @@ If you encounter issues such as port conflicts:
 
 If you want to contribute to the Vulhub Playground, fork the repository and submit a pull request.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
 
 ## Notice
 
