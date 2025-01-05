@@ -72,45 +72,6 @@ It is recommended to use a VPS of at least 1GB memory to build a vulnerability e
 1. To prevent permission errors, please ensure that the docker container has permission to access all files in the current directory.
 2. Vulhub does not support running on machines with non-x86 architecture such as ARM for now.
 
-## Contribution
-
-This project relies on docker. So any error during compilation and running are thrown by docker and related programs. Please find the cause of the error by yourself first. If it is determined that the dockerfile is written incorrectly (or the code is wrong in vulhub), then submit the issue. More details please 👉[Common reasons for compilation failure](https://github.com/phith0n/vulhub/wiki/%E7%BC%96%E8%AF%91%E5%A4%B1%E8%B4%A5%E7%9A%84%E5%8E%9F%E5%9B%A0), hope it can help you.
-
-For more question, please contact:
-
-- [Discord](https://discord.gg/bQCpZEK)
-- [Twitter](https://twitter.com/vulhub)
-
-Thanks for the following contributors:
-
-[![](https://opencollective.com/vulhub/contributors.svg?width=890&button=false)](https://github.com/vulhub/vulhub/graphs/contributors)
-
-More contributors：[Contributors List](contributors.md)
-
-## Partner
-
-Our Partners and users:
-
-<p>
-  <a href="https://www.wangan.com/vulhub" target="_blank"><img src="https://vulhub.org/img/sponsor/wangan.png" width="200"></a>
-  <a href="https://www.cvebase.com" target="_blank"><img src="https://vulhub.org/img/sponsor/cvebase.png" width="200"></a>
-  <a href="https://www.huoxian.cn" target="_blank"><img src="https://vulhub.org/img/sponsor/huoxian.png" width="200"></a>
-  <a href="https://www.chaitin.cn" target="_blank"><img src="https://vulhub.org/img/sponsor/chaitin.png" width="200"></a>
-  <a href="https://xz.aliyun.com/" target="_blank"><img src="https://vulhub.org/img/sponsor/aliyun.svg" width="200"></a>
-</p>
-
-Sponsor vulhub on patreon 🙏
-
-<a href="https://www.patreon.com/bePatron?u=12677520"><img src="https://vulhub.org/img/sponsor/patreon.png" width="150"></a>
-
-Sponsor vulhub on opencollective 🙏
-
-<p>
-  <a href="https://opencollective.com/vulhub#backer"><img src="https://opencollective.com/vulhub/backers.svg?width=138"></a>
-  <a href="https://opencollective.com/vulhub#sponsor"><img src="https://opencollective.com/vulhub/sponsors.svg?width=138"></a>
-</p>
-
-More [Donate](http://vulhub.org/#/docs/donate/).
 
 ## License
 
