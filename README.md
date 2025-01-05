@@ -19,8 +19,6 @@
 
 Vulhub is an open-source collection of pre-built vulnerable docker environments. No pre-existing knowledge of docker is required, just execute two simple commands and you have a vulnerable environment.
 
-[中文版本(Chinese version)](README.zh-cn.md)
-
 ## Installation
 
 Install Docker on Ubuntu 22.04:
