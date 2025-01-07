@@ -1,7 +1,3 @@
-<p align="center">
-  <img src=".github/assets/banner.png" alt="Vulhub" height="auto" />
-</p>
-
 # Vulhub Playground
 
 Vulhub is an open-source collection of pre-built vulnerable Docker environments. No pre-existing knowledge of Docker is required; just execute two simple commands, and you have a vulnerable environment.
