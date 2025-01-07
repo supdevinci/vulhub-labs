@@ -44,6 +44,7 @@ curl -s https://get.docker.com/ | sh
 
 # Run Docker service
 sudo systemctl start docker
+
 # Install dialog
 sudo apt install dialog
 
