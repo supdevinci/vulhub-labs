@@ -44,6 +44,9 @@ curl -s https://get.docker.com/ | sh
 
 # Run Docker service
 sudo systemctl start docker
+# Install dialog
+sudo apt install dialog
+
 ```
 
 Note: As of April 2022, Docker Compose is merged into Docker as a subcommand (Docker Compose V2). The Python version of `docker-compose` will be deprecated after June 2023. Vulhub will no longer require the installation of additional `docker-compose`, and all documentation will be updated to use the `docker compose` subcommand.
